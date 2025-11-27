@@ -1,20 +1,15 @@
 import StarRating from './StarRating'
 
-function SectionLists(props) {
+function SectionLists({ name, rating }) {
   const TOTAL = 5
+
   return (
     <section>
-      <h2>{props.name}</h2>
+      <h2>{name}</h2>
       <p>
-        Rating:
-        {' '}
-        {props.rating}
-        {' '}
-        /
-        {' '}
-        {TOTAL}
+        Rating: {rating} / {TOTAL}
       </p>
-      <StarRating rating={props.rating} />
+      <StarRating rating={rating} />
     </section>
   )
 }

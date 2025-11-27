@@ -36,11 +36,13 @@ const lists = [
 function App() {
   return (
     <>
-      {lists.map((list) => {
-        return (
-          <SectionLists key={list.id} name={list.name} rating={list.rating} />
-        )
-      })}
+       {lists.map((list) => (
+        <SectionLists 
+          key={list.id}
+          name={list.name}
+          rating={list.rating}
+        />
+      ))}
     </>
   )
 }
